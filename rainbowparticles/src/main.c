@@ -268,7 +268,6 @@ void main(void) {
             for (;;) {
                 fillArea(0, 0, LCD_WIDTH_PX, LCD_HEIGHT_PX, 0x0000);
                 for (int i = 0; i < NUM_PARTICLES; i++) {
-                    //if (particles[i].y <= particles[i].maxheight) {particles[i].y = particles[i].maxheight;particles[i].vy = 0;}
                     particles[i].vy += 0.8;
                     particles[i].x += particles[i].vx;
                     particles[i].y += particles[i].vy;
